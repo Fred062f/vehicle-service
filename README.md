@@ -74,23 +74,23 @@ Authorization: Bearer <your_jwt_token>
 
 ### Endpoints
 
-1. **POST /vehicles**
+1. **POST /add**
    - Add a new vehicle.
    - Requires JWT token.
 
-2. **GET /vehicles**
+2. **GET /list**
    - Retrieve vehicle details with optional query filters.
    - Requires JWT token.
 
-3. **PUT /vehicles/{vehicle_id}**
+3. **PUT /update/{vehicle_id}**
    - Update vehicle details by ID.
    - Requires JWT token.
 
-4. **DELETE /vehicles/{vehicle_id}**
+4. **DELETE /remove/{vehicle_id}**
    - Delete a vehicle by ID.
    - Requires JWT token.
 
-5. **GET /endpoints**
+5. **GET /**
    - List all available API endpoints with their descriptions, methods, and JWT requirements.
    - No authentication required.
 
