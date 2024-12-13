@@ -13,7 +13,6 @@ app = Flask(__name__)
 
 DATABASE = os.getenv("DATABASE")
 SECRET_KEY = os.getenv('SECRET_KEY')
-USERS_SERVICE_URL = os.getenv('USERS_SERVICE_URL')
 
 app.config['JWT_SECRET_KEY'] = SECRET_KEY
 jwt = JWTManager(app)
@@ -45,7 +44,7 @@ swagger = Swagger(app, config=swagger_config)
 
 init_db()
 
-@app.route('/add', methods=['POST'])
+@app.route('/add', methods=['POST']
 @jwt_required() 
 def add_vehicle():
     """
