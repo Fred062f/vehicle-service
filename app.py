@@ -44,7 +44,7 @@ swagger = Swagger(app, config=swagger_config)
 
 init_db()
 
-@app.route('/add', methods=['POST']
+@app.route('/add', methods=['POST'])
 @jwt_required() 
 def add_vehicle():
     """
